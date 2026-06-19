@@ -73,9 +73,36 @@ a {
   border-radius: 6px;
 }
 
-/* Hamburger hidden on desktop */
+/* =========================
+   HAMBURGER (DESKTOP HIDDEN)
+   ========================= */
+
 .hamburger {
   display: none;
+
+  width: 42px;
+  height: 42px;
+
+  border-radius: 10px;
+
+  background: rgba(255, 255, 255, 0.06);
+  border: 1px solid rgba(255, 255, 255, 0.12);
+
+  color: #fff;
+  font-size: 20px;
+
+  cursor: pointer;
+
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s ease;
+}
+
+.hamburger:hover {
+  background: rgba(255, 255, 255, 0.12);
+  border-color: rgba(255, 255, 255, 0.25);
+  transform: translateY(-1px);
 }
 
 /* =========================
@@ -366,7 +393,7 @@ html {
   }
 
   .hamburger {
-    display: block;
+    display: flex;
   }
 
   .nav-links {
@@ -431,9 +458,5 @@ html {
   .logo img {
     height: 28px;
     max-width: 140px;
-  }
-  
-  .hamburger {
-    display: block;
   }
 }
