@@ -76,11 +76,6 @@ a {
 /* Hamburger hidden on desktop */
 .hamburger {
   display: none;
-  font-size: 26px;
-  background: none;
-  border: none;
-  color: #fff;
-  cursor: pointer;
 }
 
 /* =========================
@@ -436,5 +431,9 @@ html {
   .logo img {
     height: 28px;
     max-width: 140px;
+  }
+  
+  .hamburger {
+    display: block;
   }
 }
