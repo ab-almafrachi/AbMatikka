@@ -762,13 +762,11 @@ html {
 .thankyou-buttons {
   display: flex;
   justify-content: center;
-  gap: 12px;
-  flex-wrap: wrap;
+  align-items: center;
 }
 
-/* reuse your existing buttons */
-.thankyou-buttons .btn,
-.thankyou-buttons .btn-secondary {
+/* only ONE button now */
+.thankyou-buttons .btn {
   padding: 12px 18px;
   border-radius: 10px;
   text-decoration: none;
@@ -788,8 +786,7 @@ html {
     flex-direction: column;
   }
 
-  .thankyou-buttons a,
-  .thankyou-buttons button {
+  .thankyou-buttons a {
     width: 100%;
   }
 }
