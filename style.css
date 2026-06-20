@@ -754,3 +754,13 @@ html {
   text-decoration: underline;
   opacity: 0.9;
 }
+
+.consent {
+  font-size: 13px;
+  color: #9aa3b2;
+  line-height: 1.5;
+}
+
+.consent a {
+  text-decoration: underline;
+}
