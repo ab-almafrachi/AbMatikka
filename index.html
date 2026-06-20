@@ -48,10 +48,14 @@
     <span></span>
   </button>
   <div class="nav-links" id="nav-links">
-    <a href="#about" data-offset="95">Tietoa opetuksesta</a>
-    <a href="#pricing" data-offset="110">Hinnasto</a>
-    <a href="#faq" data-offset="65">UKK</a>
-    <a href="#contact" class="btn-small" data-offset="10">Ota yhteyttä</a>
+    <a href="#about" data-offset="95" data-key="nav_about">Tietoa opetuksesta</a>
+    <a href="#pricing" data-offset="110" data-key="nav_pricing">Hinnasto</a>
+    <a href="#faq" data-offset="65" data-key="nav_faq">UKK</a>
+    <a href="#contact" class="btn-small" data-offset="10" data-key="nav_contact">Ota yhteyttä</a>
+  </div>
+  <div class="language-switcher">
+    <button class="lang-btn active" data-lang="fi" data-label-desktop="Suomi" data-label-mobile="FI">Suomi</button>
+    <button class="lang-btn" data-lang="en" data-label-desktop="English" data-label-mobile="EN">English</button>
   </div>
 </nav>
 
@@ -60,14 +64,14 @@
   <div class="hero-bg"></div>
 
   <div class="hero-content">
-    <h1>Matematiikan tukiopetusta, joka auttaa ymmärtämään</h1>
-    <p>
+    <h1 data-key="hero_title">Matematiikan tukiopetusta, joka auttaa ymmärtämään</h1>
+    <p data-key="hero_desc">
       Selkeää ja yksilöllistä opetusta peruskoulun 1.–9. luokille Espoossa, Helsingissä, Vantaalla sekä etänä.
     </p>
 
     <div class="hero-buttons">
-      <a href="#contact" class="btn">Varaa tutustumistunti</a>
-      <a href="#pricing" class="btn-secondary">Hinnasto</a>
+      <a href="#contact" class="btn" data-key="hero_btn_book">Varaa tutustumistunti</a>
+      <a href="#pricing" class="btn-secondary" data-key="hero_btn_pricing">Hinnasto</a>
     </div>
   </div>
 </header>
@@ -75,42 +79,42 @@
 <!-- ABOUT -->
 <section id="about" class="section">
 
-  <h2>Tietoa opetuksesta</h2>
+  <h2 data-key="about_title">Tietoa opetuksesta</h2>
 
   <!-- ABOUT PART -->
   <div class="subsection">
-    <h3>AbMatikka</h3>
-  <p>
+    <h3 data-key="about_h3_1">AbMatikka</h3>
+  <p data-key="about_p1">
     AbMatikka tarjoaa selkeää ja yksilöllistä matematiikan opetusta peruskoulun oppilaille.
   </p>
 
-  <p>
+  <p data-key="about_p2">
     Opiskelen tällä hetkellä lukiossa ja tarjoan matematiikan tukiopetusta peruskoululaisille.
   </p>
 
-  <p>
+  <p data-key="about_p3">
     Tarjoan matematiikan yksityisopetusta ja tukiopetusta peruskoulun oppilaille Espoossa, Helsingissä, Vantaalla sekä etänä kaikkialle Suomeen.
   </p>
 </div>
 
   <!-- TEACHING METHOD PART -->
   <div class="subsection">
-    <h3>Opetusmenetelmä</h3>
+    <h3 data-key="about_h3_2">Opetusmenetelmä</h3>
 
-    <p>Opetus etenee vaiheittain:</p>
+    <p data-key="about_method_intro">Opetus etenee vaiheittain:</p>
 
     <ul>
-      <li>Lähtötason kartoitus</li>
-      <li>Ongelmien tunnistaminen</li>
-      <li>Selkeä vaiheittainen opetus</li>
-      <li>Itsenäinen osaaminen</li>
+      <li data-key="method_1">Lähtötason kartoitus</li>
+      <li data-key="method_2">Ongelmien tunnistaminen</li>
+      <li data-key="method_3">Selkeä vaiheittainen opetus</li>
+      <li data-key="method_4">Itsenäinen osaaminen</li>
     </ul>
   </div>
 
   <!-- EXTRA INFO -->
   <div class="subsection">
-    <h3>Lisätiedot</h3>
-    <p>
+    <h3 data-key="about_h3_3">Lisätiedot</h3>
+    <p data-key="about_extra">
       Opetus onnistuu suomeksi, englanniksi ja arabiaksi.  
       Saatavilla Espoossa, Helsingissä, Vantaalla sekä etänä.
     </p>
@@ -120,101 +124,101 @@
 
 <!-- PRICING -->
 <section id="pricing" class="section">
-  <h2>Hinnasto</h2>
+  <h2 data-key="pricing_title">Hinnasto</h2>
 
   <div class="pricing-clean">
 
     <div class="pricing-item">
-      <div class="pricing-title">Tutustumistunti</div>
-      <div class="pricing-price">45 min – Ilmainen</div>
-      <div class="pricing-desc">Ensimmäinen tapaaminen ja lähtötason kartoitus</div>
+      <div class="pricing-title" data-key="pricing_free_title">Tutustumistunti</div>
+      <div class="pricing-price" data-key="pricing_free_price">45 min – Ilmainen</div>
+      <div class="pricing-desc" data-key="pricing_free_desc">Ensimmäinen tapaaminen ja lähtötason kartoitus</div>
     </div>
 
     <div class="pricing-item featured">
-      <div class="pricing-title">Yksityisopetus</div>
-      <div class="pricing-price">25 € / 60 min</div>
-      <div class="pricing-desc">Yksilöllinen matematiikan opetus</div>
+      <div class="pricing-title" data-key="pricing_private_title">Yksityisopetus</div>
+      <div class="pricing-price" data-key="pricing_private_price">25 € / 60 min</div>
+      <div class="pricing-desc" data-key="pricing_private_desc">Yksilöllinen matematiikan opetus</div>
     </div>
 
   </div>
 
-  <div class="payment-methods">
+  <div class="payment-methods" data-key="payment_methods">
     Maksutavat: MobilePay • Tilisiirto • Käteinen • Lasku
   </div>
 </section>
 
 <!-- FAQ -->
 <section id="faq" class="section dark">
-  <h2>Usein kysytyt kysymykset</h2>
+  <h2 data-key="faq_title">Usein kysytyt kysymykset</h2>
 
   <div class="faq-clean">
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Kenelle opetus sopii?</span>
+        <span data-key="faq_q1">Kenelle opetus sopii?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a1">
         Peruskoulun oppilaille (1.–9. luokka), jotka tarvitsevat tukea matematiikassa.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Voiko opetusta saada etänä?</span>
+        <span data-key="faq_q2">Voiko opetusta saada etänä?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a2">
         Kyllä. Opetus onnistuu sekä etänä että lähiopetuksena Espoossa, Helsingissä ja Vantaalla.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Mitä kieliä opetuksessa käytetään?</span>
+        <span data-key="faq_q3">Mitä kieliä opetuksessa käytetään?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a3">
         Opetus onnistuu suomeksi, englanniksi ja arabiaksi.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Miten maksu toimii?</span>
+        <span data-key="faq_q4">Miten maksu toimii?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a4">
         Maksu onnistuu MobilePaylla, tilisiirrolla, käteisellä tai laskulla.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Voiko tulla vain ennen koetta?</span>
+        <span data-key="faq_q5">Voiko tulla vain ennen koetta?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a5">
         Kyllä. Yksittäiset tunnit ja kertaluonteinen tuki ovat täysin mahdollisia.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Tarvitseeko oppilaan olla hyvä matematiikassa?</span>
+        <span data-key="faq_q6">Tarvitseeko oppilaan olla hyvä matematiikassa?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a6">
         Ei tarvitse. Opetus mukautetaan aina oppilaan lähtötasoon.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span>Miten ensimmäinen tunti toimii?</span>
+        <span data-key="faq_q7">Miten ensimmäinen tunti toimii?</span>
         <span class="faq-icon">⌄</span>
       </button>
-      <div class="faq-answer">
+      <div class="faq-answer" data-key="faq_a7">
         Ensimmäinen tutustumistunti sisältää lähtötason kartoituksen ja suunnitelman tekemisen tulevaa opetusta varten.
       </div>
     </div>
@@ -225,34 +229,34 @@
 
 <!-- CONTACT / FORM -->
 <section id="contact" class="section">
-  <h2>Ota yhteyttä / Varaa tunti</h2>
+  <h2 data-key="contact_title">Ota yhteyttä / Varaa tunti</h2>
 
 <form action="https://formspree.io/f/xbdenyvz" method="POST" class="form" accept-charset="UTF-8">
 
   <div class="form-group">
-    <label for="student_name">Oppilaan nimi*</label>
+    <label for="student_name" data-key="form_student_label">Oppilaan nimi*</label>
     <input id="student_name" name="student_name" type="text" required>
   </div>
 
   <div class="form-group">
-    <label for="parent_name">Huoltajan nimi (valinnainen)</label>
+    <label for="parent_name" data-key="form_parent_label">Huoltajan nimi (valinnainen)</label>
     <input id="parent_name" name="parent_name" type="text">
   </div>
 
   <div class="form-group">
-    <label for="email">Sähköposti*</label>
+    <label for="email" data-key="form_email_label">Sähköposti*</label>
     <input id="email" name="email" type="email" required>
   </div>
 
   <div class="form-group">
-    <label for="phone">Puhelinnumero*</label>
+    <label for="phone" data-key="form_phone_label">Puhelinnumero*</label>
     <input id="phone" name="phone" type="tel" required>
   </div>
 
   <div class="form-group">
-    <label for="grade">Luokka-aste*</label>
+    <label for="grade" data-key="form_grade_label">Luokka-aste*</label>
     <select id="grade" name="grade" required>
-      <option value="">Valitse</option>
+      <option value="" data-key="form_select_default">Valitse</option>
       <option>1</option><option>2</option><option>3</option>
       <option>4</option><option>5</option><option>6</option>
       <option>7</option><option>8</option><option>9</option>
@@ -260,62 +264,64 @@
   </div>
 
   <div class="form-group">
-    <label for="type">Opetusmuoto*</label>
+    <label for="type" data-key="form_type_label">Opetusmuoto*</label>
     <select id="type" name="type" required>
-    <option value="">Valitse</option>    
-      <option>Lähiopetus</option>
-      <option>Etäopetus</option>
+    <option value="" data-key="form_select_default">Valitse</option>    
+      <option data-key="form_type_onsite">Lähiopetus</option>
+      <option data-key="form_type_online">Etäopetus</option>
     </select>
   </div>
 
   <div class="form-group">
-    <label for="city">Kaupunki*</label>
+    <label for="city" data-key="form_city_label">Kaupunki*</label>
     <input id="city" name="city" type="text" required placeholder="Helsinki, Espoo, Vantaa...">
   </div>
 
   <div class="form-group">
-    <label for="issues">Suurimmat haasteet matematiikassa*</label>
+    <label for="issues" data-key="form_issues_label">Suurimmat haasteet matematiikassa*</label>
     <textarea id="issues" name="issues" required></textarea>
   </div>
 
   <div class="form-row">
     <div class="form-group">
-      <label for="days">Toivotut päivät (valinnainen)</label>
+      <label for="days" data-key="form_days_label">Toivotut päivät (valinnainen)</label>
       <input id="days" name="days" type="text">
     </div>
 
     <div class="form-group">
-      <label for="times">Toivotut ajat (valinnainen)</label>
+      <label for="times" data-key="form_times_label">Toivotut ajat (valinnainen)</label>
       <input id="times" name="times" type="text">
     </div>
   </div>
 
   <div class="form-group">
-    <label for="billing_details">
+    <label for="billing_details" data-key="form_billing_label">
       Laskutustiedot (valinnainen)
     </label>
     <textarea 
       id="billing_details"
       name="billing_details"
-      placeholder="Täytä vain jos haluat maksaa laskulla">
+      placeholder="
+      Etu- ja sukunimi, katuosoite, postinumero, postitoimipaikka
+      (Täytä vain jos haluat maksaa laskulla)">
 </textarea>
   </div>
 
   <div class="form-group">
-    <label for="message">Lisätiedot (valinnainen)</label>
+    <label for="message" data-key="form_message_label">Lisätiedot (valinnainen)</label>
     <textarea id="message" name="message"></textarea>
   </div>
 
-  <p class="form-note">
+  <p class="form-note" data-key="form_note">
   Yhteydenotto ei sido sinua mihinkään.
 </p>
-  <button type="submit">Lähetä yhteydenotto</button>
+  <button type="submit" data-key="form_submit">Lähetä yhteydenotto</button>
 </form>
 </section>
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p>© 2026 Abdulrahman Al-Mafrachi. Kaikki oikeudet pidätetään.</p>
+  <p data-key="footer_copyright">© 2026 Abdulrahman Al-Mafrachi. Kaikki oikeudet pidätetään.</p>
   <p>Y-tunnus: 3632704-8</p>
 </footer>
 
