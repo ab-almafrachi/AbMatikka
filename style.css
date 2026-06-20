@@ -15,7 +15,7 @@ a { color: inherit; text-decoration: none; }
 
 .nav {
   display:flex;
-  justify-content:space-between;
+  justify-content:center;
   align-items:center;
   padding:20px 40px;
   position:fixed;
@@ -25,16 +25,20 @@ a { color: inherit; text-decoration: none; }
   z-index:9999;
   background:#0f1115;
   border-bottom:1px solid #222;
+  gap: 40px;
 }
 
-.logo { font-weight:700; }
+.logo { 
+  font-weight:700;
+  position: absolute;
+  left: 40px;
+}
 
 .nav-links {
   display: flex;
   gap: 20px;
   align-items: center;
   justify-content: center;
-  flex: 1;
 }
 
 .nav-links a {
