@@ -107,7 +107,6 @@ document.addEventListener("DOMContentLoaded", () => {
   function updateTeachingMode() {
     if (typeSelect.value === "lahi") {
       cityGroup.style.display = "flex";
-      cityInput.required = true;
     } else {
       cityGroup.style.display = "none";
       cityInput.required = false;
