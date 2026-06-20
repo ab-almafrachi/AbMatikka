@@ -711,3 +711,85 @@ html {
     display: none;
   }
 }
+
+/* =========================
+   THANK YOU PAGE
+   ========================= */
+
+.thankyou-page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background: #0f1115;
+  color: #f5f5f5;
+  padding: 20px;
+}
+
+.thankyou-card {
+  width: 100%;
+  max-width: 650px;
+
+  text-align: center;
+
+  padding: 40px;
+
+  border-radius: 16px;
+
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.thankyou-icon {
+  font-size: 56px;
+  margin-bottom: 18px;
+  color: #ffffff;
+}
+
+.thankyou-card h1 {
+  font-size: 32px;
+  margin-bottom: 12px;
+}
+
+.thankyou-card p {
+  font-size: 15px;
+  opacity: 0.75;
+  margin-bottom: 24px;
+  line-height: 1.6;
+}
+
+.thankyou-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+/* reuse your existing buttons */
+.thankyou-buttons .btn,
+.thankyou-buttons .btn-secondary {
+  padding: 12px 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+@media (max-width: 768px) {
+  .thankyou-card {
+    padding: 28px 20px;
+  }
+
+  .thankyou-card h1 {
+    font-size: 26px;
+  }
+
+  .thankyou-buttons {
+    flex-direction: column;
+  }
+
+  .thankyou-buttons a,
+  .thankyou-buttons button {
+    width: 100%;
+  }
+}
