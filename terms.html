@@ -48,7 +48,7 @@
   <h1>Käyttöehdot</h1>
 
   <p class="legal-date">
-    Päivitetty: 27.6.2026
+    Päivitetty: 12.7.2026
   </p>
 
   <h2>1. Yleistä</h2>
@@ -61,8 +61,7 @@
   </p>
 
   <p>
-    Abdulrahman Al-Mafrachi<br>
-    Y-tunnus: 3632704-8
+    Abdulrahman Al-Mafrachi
   </p>
 
   <p>
@@ -92,34 +91,45 @@
   </p>
 
   <h2>4. Hinnat ja maksaminen</h2>
+
   <p>
-    Palvelun hinnat ilmoitetaan verkkosivustolla.
+    Matematiikan yksityisopetuksen hinta on <strong>30 € / 60 minuuttia (sis. ALV 25,5 %)</strong>, ellei toisin sovita.
   </p>
 
   <p>
-    Maksu voidaan suorittaa MobilePaylla, tilisiirrolla, käteisellä tai laskulla, mikäli siitä sovitaan erikseen.
+    Maksu tapahtuu laskulla UKKO.fi-palvelun kautta. Käteismaksuja tai suoria tilisiirtoja ei hyväksytä.
   </p>
 
   <p>
-    Pidän oikeuden muuttaa hintoja tulevien varausten osalta.
+    Laskun maksuehdot määräytyvät UKKO.fi-palvelun ehtojen mukaisesti.
+  </p>
+
+  <p>
+    Pidän oikeuden muuttaa palvelun hintoja tulevien varausten osalta.
   </p>
 
   <h2>5. Peruuttaminen</h2>
+
   <p>
     Asiakas voi peruuttaa sovitun opetuskerran maksutta viimeistään 24 tuntia ennen sovittua aikaa.
   </p>
 
   <p>
-    Myöhemmin peruutetusta tai kokonaan käyttämättä jätetystä opetuskerrasta voidaan veloittaa enintään opetuskerran täysi hinta.
+    Myöhemmin peruutetusta tai käyttämättä jätetystä opetuskerrasta voidaan veloittaa opetuskerran täysi hinta.
   </p>
 
   <p>
-    Poikkeustilanteet arvioidaan tapauskohtaisesti.
+    Sairastumis- ja muut poikkeustilanteet arvioidaan tapauskohtaisesti.
   </p>
 
   <h2>6. Vastuunrajoitus</h2>
+
   <p>
     AbMatikka pyrkii tarjoamaan laadukasta opetusta, mutta ei takaa tiettyjä arvosanoja, koetuloksia tai muita oppimistuloksia.
+  </p>
+
+  <p>
+    Oppilas vastaa omasta opiskelustaan ja harjoittelustaan myös opetuskertojen välillä.
   </p>
 
   <p>
@@ -127,15 +137,17 @@
   </p>
 
   <h2>7. Immateriaalioikeudet</h2>
+
   <p>
     Verkkosivuston sisältö, tekstit, kuvat, logo ja muu materiaali kuuluvat AbMatikalle tai niiden oikeudenhaltijoille.
   </p>
 
   <p>
-    Sisällön kopioiminen, julkaiseminen tai muu käyttö ilman lupaa on kielletty.
+    Sisällön kopioiminen, julkaiseminen tai muu käyttö ilman etukäteen annettua kirjallista lupaa on kielletty.
   </p>
 
   <h2>8. Sovellettava laki</h2>
+
   <p>
     Näihin käyttöehtoihin sovelletaan Suomen lakia.
   </p>
@@ -148,34 +160,59 @@
 
 <!-- FOOTER -->
 <footer class="footer">
-  <p data-key="footer_copyright">© 2026 Abdulrahman Al-Mafrachi. Kaikki oikeudet pidätetään.</p>
-  <p>Y-tunnus: 3632704-8</p>
+  <p data-key="footer_copyright">
+    © 2026 AbMatikka. Kaikki oikeudet pidätetään.
+  </p>
+
+  <div class="footer-billing">
+    <p>Laskutus hoidetaan turvallisesti UKKO.fi-palvelun kautta.</p>
+
+    <a href="https://www.ukko.fi/" target="_blank" rel="noopener noreferrer">
+      <img
+        src="images/UKKO_Kevytyrittaja_logo_white.png"
+        alt="UKKO.fi"
+        class="footer-ukko-logo">
+    </a>
+  </div>
 
   <div class="footer-links">
-      <a href="terms.html">Käyttöehdot</a>
-      <span>•</span>
-      <a href="privacy.html">Tietosuojaseloste</a>
-    </div>
+    <a href="terms.html">Käyttöehdot</a>
+    <span>•</span>
+    <a href="privacy.html">Tietosuojaseloste</a>
+  </div>
 </footer>
 
 <script src="script.js"></script>
 
-<div id="cookie-banner" class="cookie-banner">
-  <div class="cookie-box">
-    <div class="cookie-text">
-      <h3>Evästeet</h3>
-      <p>
-        Käytämme Google Analyticsia sivuston käytön analysointiin. 
-        Tietoja käytetään vain sivuston kehittämiseen. 
-        Voit hyväksyä tai hylätä analytiikkaevästeet.
-      </p>
-    </div>
+<div id="cookie-modal" class="cookie-modal">
 
-    <div class="cookie-actions">
-      <button id="cookie-accept" class="cookie-btn accept">Hyväksy</button>
-      <button id="cookie-reject" class="cookie-btn reject">Hylkää</button>
-    </div>
+  <div class="cookie-modal-box">
+
+    <h2>Evästeasetukset</h2>
+
+    <p>
+      Voit valita, sallitaanko Google Analytics -analytiikka.
+    </p>
+
+    <label class="cookie-toggle">
+      <input
+        type="checkbox"
+        id="analytics-toggle">
+      Salli analytiikkaevästeet
+    </label>
+
+    <button
+      id="cookie-save"
+      class="cookie-btn accept">
+      Tallenna asetukset
+    </button>
+
   </div>
+
 </div>
+
+<button id="cookie-settings-floating" class="cookie-settings-floating">
+    🍪 Evästeasetukset
+</button>
 </body>
 </html>

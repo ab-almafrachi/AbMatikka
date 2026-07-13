@@ -97,22 +97,13 @@ function saveConsent(state) {
 }
 
 function getConsent() {
-  const raw = localStorage.getItem("cookie_consent");
-  if (!raw) return null;
-  return JSON.parse(raw);
-}
-
-/* -----------------------------
-   GA LOADER
------------------------------- */
-function loadGA() {
-  const script = document.createElement("script");
-  script.async = true;
-  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
-  document.head.appendChild(script);
-
-  gtag('js', new Date());
-  gtag('config', GA_ID, { anonymize_ip: true });
+  try {
+    const raw = localStorage.getItem("cookie_consent");
+    if (!raw) return null;
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
 }
 
 /* -----------------------------
@@ -147,12 +138,21 @@ document.addEventListener("DOMContentLoaded", () => {
 
   const acceptBtn = document.getElementById("cookie-accept");
   const rejectBtn = document.getElementById("cookie-reject");
-  const settingsBtn = document.getElementById("cookie-settings");
+  const settingsBtn = document.getElementById("cookie-settings-floating");
 
   const saveBtn = document.getElementById("cookie-save");
   const analyticsToggle = document.getElementById("analytics-toggle");
 
   const existing = getConsent();
+
+  const floatingSettings =
+    document.getElementById("cookie-settings-floating");
+
+  if (existing) {
+    floatingSettings.style.display = "block";
+    } else {
+    floatingSettings.style.display = "none";
+  }
 
   if (!existing) {
     show(banner);
@@ -167,17 +167,22 @@ document.addEventListener("DOMContentLoaded", () => {
   acceptBtn?.addEventListener("click", () => {
     saveConsent({ analytics: true });
     applyConsent(true);
-    hide(banner);
-  });
 
-  rejectBtn?.addEventListener("click", () => {
+    hide(banner);
+    floatingSettings.style.display = "block";
+});
+
+rejectBtn?.addEventListener("click", () => {
     saveConsent({ analytics: false });
     applyConsent(false);
+
     hide(banner);
-  });
+    floatingSettings.style.display = "block";
+});
 
   settingsBtn?.addEventListener("click", () => {
-    analyticsToggle.checked = getConsent()?.analytics || false;
+    const consent = getConsent();
+    analyticsToggle.checked = consent ? consent.analytics : false;
     show(modal);
   });
 
@@ -189,6 +194,48 @@ document.addEventListener("DOMContentLoaded", () => {
 
     hide(modal);
     hide(banner);
-  });
+
+    floatingSettings.style.display = "block";
+});
 
 });
+
+let gaLoaded = false;
+
+function loadGA() {
+  if (gaLoaded) return;
+
+  gaLoaded = true;
+
+  const script = document.createElement("script");
+  script.async = true;
+  script.src = `https://www.googletagmanager.com/gtag/js?id=${GA_ID}`;
+
+  script.onload = () => {
+    gtag("js", new Date());
+    gtag("config", GA_ID, {
+      anonymize_ip: true
+    });
+  };
+
+  document.head.appendChild(script);
+}
+
+const subjectSelect = document.getElementById("contact_subject");
+const otherSubjectGroup = document.getElementById("other-subject-group");
+const otherSubjectInput = document.getElementById("other_subject");
+
+if (subjectSelect) {
+  subjectSelect.addEventListener("change", function () {
+
+    if (this.value === "other") {
+      otherSubjectGroup.style.display = "block";
+      otherSubjectInput.required = true;
+    } else {
+      otherSubjectGroup.style.display = "none";
+      otherSubjectInput.required = false;
+      otherSubjectInput.value = "";
+    }
+
+  });
+}

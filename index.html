@@ -26,51 +26,108 @@
   <link rel="stylesheet" href="style.css">
   <link rel="canonical" href="https://ab-almafrachi.github.io/abmatikka/">
 
-  <!-- Combined Site Name and Local Business Schema for Google -->
-  <script type="application/ld+json">
-  [
-    {
-      "@context": "https://schema.org",
-      "@type": "WebSite",
-      "name": "AbMatikka",
-      "url": "https://ab-almafrachi.github.io/abmatikka/"
+<script type="application/ld+json">
+[
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "name": "AbMatikka",
+    "url": "https://ab-almafrachi.github.io/abmatikka/"
+  },
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "AbMatikka",
+    "url": "https://ab-almafrachi.github.io/abmatikka/",
+    "image": "https://ab-almafrachi.github.io/abmatikka/images/logo.png",
+    "description": "Matematiikan yksityisopetusta peruskoulun 1.–9. luokille Espoossa, Helsingissä, Vantaalla ja etänä.",
+    "serviceType": "Matematiikan yksityisopetus",
+    "priceRange": "€",
+
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Espoo",
+      "addressRegion": "Uusimaa",
+      "addressCountry": "FI"
     },
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "AbMatikka",
-      "image": "https://ab-almafrachi.github.io/abmatikka/images/logo.png",
-      "url": "https://ab-almafrachi.github.io/abmatikka/",
-      "priceRange": "$$",
-      "description": "Matematiikan yksityisopetusta peruskoulun 1.–9. luokille Espoossa, Helsingissä, Vantaalla ja etänä.",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Espoo",
-        "addressRegion": "Uusimaa",
-        "addressCountry": "FI"
+
+    "areaServed": [
+      {
+        "@type": "City",
+        "name": "Espoo"
       },
-      "areaServed": [
-        {"@type": "City", "name": "Espoo"},
-        {"@type": "City", "name": "Helsinki"},
-        {"@type": "City", "name": "Vantaa"}
-      ],
-      "makesOffer": {
+      {
+        "@type": "City",
+        "name": "Helsinki"
+      },
+      {
+        "@type": "City",
+        "name": "Vantaa"
+      },
+      {
+        "@type": "Country",
+        "name": "Finland"
+      }
+    ],
+
+    "offers": [
+      {
         "@type": "Offer",
+        "url": "https://ab-almafrachi.github.io/abmatikka/#pricing",
+        "availability": "https://schema.org/InStock",
+        "price": "0",
+        "priceCurrency": "EUR",
         "itemOffered": {
           "@type": "Service",
-          "name": "Matematiikan yksityisopetus"
+          "name": "Tutustumistunti",
+          "description": "Ilmainen 45 minuutin tutustumistunti ja lähtötason kartoitus."
+        }
+      },
+      {
+        "@type": "Offer",
+        "url": "https://ab-almafrachi.github.io/abmatikka/#pricing",
+        "availability": "https://schema.org/InStock",
+        "priceSpecification": {
+          "@type": "UnitPriceSpecification",
+          "price": "30",
+          "priceCurrency": "EUR",
+          "unitCode": "HUR"
+        },
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Matematiikan yksityisopetus",
+          "description": "60 minuutin matematiikan yksityisopetus peruskoulun 1.–9. luokille."
         }
       }
-    }
-  ]
-  </script>
+    ]
+  }
+]
+</script>
+
+<meta name="author" content="Abdulrahman Al-Mafrachi">
+<meta name="robots" content="index, follow">
+<meta name="format-detection" content="telephone=no">
+<meta name="color-scheme" content="dark">
+
+<meta property="og:locale" content="fi_FI">
+<meta property="og:site_name" content="AbMatikka">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="AbMatikka – Matematiikan tukiopetus">
+<meta name="twitter:description" content="Matematiikan yksityisopetusta Espoossa, Helsingissä, Vantaalla ja etänä.">
+<meta name="twitter:image" content="https://ab-almafrachi.github.io/abmatikka/images/logo.png">
+
+<link rel="shortcut icon" href="images/icons/favicon.ico">
+
+<link rel="preload" href="style.css" as="style">
+<link rel="preload" href="images/logo.png" as="image">
 </head>
   
 <body>
 <div id="top"></div>
 <!-- NAV -->
 <nav class="nav">
-  <a href="#" class="logo">
+  <a href="index.html" class="logo">
     <img src="images/logo.png" alt="AbMatikka">
   </a>
   <button class="hamburger" id="hamburger">
@@ -93,9 +150,9 @@
   <div class="hero-bg"></div>
 
   <div class="hero-content">
-    <h1 data-key="hero_title">Matematiikan tukiopetusta, joka auttaa ymmärtämään</h1>
+    <h1 data-key="hero_title">Yksilöllistä matematiikan tukiopetusta peruskoululaisille</h1>
     <p data-key="hero_desc">
-      Selkeää ja yksilöllistä opetusta peruskoulun 1.–9. luokille Espoossa, Helsingissä, Vantaalla sekä etänä.
+      Selkeää ja yksilöllistä matematiikan opetusta peruskoulun 1.–9. luokille Espoossa, Helsingissä, Vantaalla sekä etänä.
     </p>
 
     <div class="hero-buttons">
@@ -118,7 +175,7 @@
   </p>
 
   <p data-key="about_p2">
-    Opiskelen lukiossa ja tarjoan matematiikan tukiopetusta peruskoulun oppilaille. Opetus perustuu selkeisiin vaiheittaisiin selityksiin ja oppilaan yksilöllisiin tarpeisiin.
+    Olen lukio-opiskelija ja tarjoan matematiikan tukiopetusta peruskoulun oppilaille. Opetus perustuu selkeisiin vaiheittaisiin selityksiin ja oppilaan yksilöllisiin tarpeisiin.
   </p>
 
   <p data-key="about_p3">
@@ -144,7 +201,7 @@
   <div class="subsection">
     <h3 data-key="about_h3_3">Lisätiedot</h3>
     <p data-key="about_extra">
-      Opetus onnistuu suomeksi, englanniksi ja arabiaksi.  
+      Opetus onnistuu suomeksi ja englanniksi.  
       Saatavilla Espoossa, Helsingissä, Vantaalla sekä etänä.
     </p>
   </div>
@@ -155,7 +212,7 @@
   <ul class="benefits-list">
     <li>Opetus suunnitellaan oppilaan tavoitteiden ja lähtötason mukaan</li>
     <li>Ensimmäinen 45 minuutin tutustumistunti ilmainen</li>
-    <li>Opetus suomeksi, englanniksi ja arabiaksi</li>
+    <li>Opetus suomeksi ja englanniksi</li>
     <li>Saatavilla etänä sekä Espoossa, Helsingissä ja Vantaalla</li>
   </ul>
 </section>
@@ -214,15 +271,22 @@
 
     <div class="pricing-item featured">
       <div class="pricing-title" data-key="pricing_private_title">Yksityisopetus</div>
-      <div class="pricing-price" data-key="pricing_private_price">25 € / 60 min</div>
-      <div class="pricing-desc" data-key="pricing_private_desc">Yksilöllinen matematiikan opetus</div>
+      <div class="pricing-price" data-key="pricing_private_price">30 € / 60 min</div>
+      <div class="pricing-desc" data-key="pricing_private_desc">(sis. ALV 25,5 %)</div>
     </div>
 
   </div>
 
-  <div class="payment-methods" data-key="payment_methods">
-    Maksutavat: MobilePay • Tilisiirto • Käteinen • Lasku
-  </div>
+  <div class="payment-methods">
+  Opetuksesta lähetetään lasku UKKO.fi:n kautta.
+
+  <a href="https://www.ukko.fi/" target="_blank" rel="noopener noreferrer">
+    <img
+      src="images/UKKO_Kevytyrittaja_logo_white.png"
+      alt="UKKO.fi"
+      class="ukko-logo">
+  </a>
+</div>
 </section>
 
 <!-- FAQ -->
@@ -257,17 +321,17 @@
         <span class="faq-icon">⌄</span>
       </button>
       <div class="faq-answer" data-key="faq_a3">
-        Opetus onnistuu suomeksi, englanniksi ja arabiaksi.
+        Opetus onnistuu suomeksi ja englanniksi.
       </div>
     </div>
 
     <div class="faq-item">
       <button class="faq-question">
-        <span data-key="faq_q4">Miten maksu toimii?</span>
+        <span data-key="faq_q4">Miten laskutus toimii?</span>
         <span class="faq-icon">⌄</span>
       </button>
       <div class="faq-answer" data-key="faq_a4">
-        Maksu onnistuu MobilePaylla, tilisiirrolla, käteisellä tai laskulla.
+        Lasku lähetetään UKKO.fi-palvelun kautta, ja hinta on 30 € / 60 min (sis. ALV 25,5 %).
       </div>
     </div>
 
@@ -373,7 +437,7 @@
   <select id="lesson_type" name="lesson_type" required>
     <option value="">Valitse</option>
     <option value="free_intro">Ilmainen tutustumistunti (45 min)</option>
-    <option value="private_lesson">Yksityisopetustunti (25 €/h)</option>
+    <option value="private_lesson">Yksityisopetus (30 € / 60 min)</option>
   </select>
 </div>
 
@@ -418,9 +482,13 @@
     placeholder="Esim. tuleva koe, tavoitteet, erityistoiveet, oppimiseen liittyvät huomiot tai muuta hyödyllistä tietoa."></textarea>
 </div>
 
-<p class="form-note">
-  Varauspyyntö ei vielä muodosta sitovaa sopimusta. Vahvistan ajan erikseen yhteydenoton jälkeen.
-</p>
+<div class="form-note">
+  <ul>
+    <li>Varauspyyntö ei ole sitova. Sovimme opetuksen ajankohdan erikseen sähköpostitse tai puhelimitse.</li>
+    <li>Lasku lähetetään opetuksen jälkeen UKKO.fi-palvelun kautta antamaasi sähköpostiosoitteeseen.</li>
+    <li>Mahdollinen peruutus tulee tehdä viimeistään 24 tuntia ennen sovittua opetusaikaa. Tarkemmat ehdot löytyvät käyttöehdoista.</li>
+  </ul>
+</div>
 
 <div class="form-group consent">
   <label>
@@ -457,6 +525,30 @@
     </div>
 
     <div class="form-group">
+  <label for="contact_subject">Aihe*</label>
+  <select id="contact_subject" name="subject" required>
+    <option value="">Valitse aihe</option>
+    <option>Yleinen kysymys</option>
+    <option>Varaus</option>
+    <option>Hinnasto</option>
+    <option>Tutustumistunti</option>
+    <option>Laskutus</option>
+    <option>Tietosuoja</option>
+    <option value="other">Muu</option>
+  </select>
+</div>
+
+<div class="form-group" id="other-subject-group" style="display:none;">
+  <label for="other_subject">Mikä aihe?*</label>
+  <input
+    id="other_subject"
+    name="other_subject"
+    type="text"
+    maxlength="100"
+    placeholder="Kirjoita aihe">
+</div>
+
+    <div class="form-group">
       <label for="contact_message">Viesti*</label>
       <textarea id="contact_message" name="message" required placeholder="Kirjoita viestisi tähän..."></textarea>
     </div>
@@ -478,10 +570,7 @@
 
   <div class="footer-top">
     <p class="footer-copy">
-      © 2026 Abdulrahman Al-Mafrachi. Kaikki oikeudet pidätetään.
-    </p>
-    <p class="footer-id">
-      Y-tunnus: 3632704-8
+      © 2026 AbMatikka. Kaikki oikeudet pidätetään.
     </p>
   </div>
 
@@ -491,6 +580,17 @@
     </a>
     <a href="#contact" class="footer-btn secondary">
       Ota yhteyttä
+    </a>
+  </div>
+
+  <div class="footer-billing">
+    <p>Laskutus hoidetaan turvallisesti UKKO.fi-palvelun kautta.</p>
+
+    <a href="https://www.ukko.fi/" target="_blank" rel="noopener noreferrer">
+      <img
+        src="images/UKKO_Kevytyrittaja_logo_white.png"
+        alt="UKKO.fi"
+        class="footer-ukko-logo">
     </a>
   </div>
 
@@ -516,10 +616,41 @@
     </div>
 
     <div class="cookie-actions">
-      <button id="cookie-accept" class="cookie-btn accept">Hyväksy</button>
-      <button id="cookie-reject" class="cookie-btn reject">Hylkää</button>
-    </div>
+  <button id="cookie-accept" class="cookie-btn accept">Hyväksy</button>
+  <button id="cookie-reject" class="cookie-btn reject">Hylkää</button>
+</div>
   </div>
 </div>
+
+<div id="cookie-modal" class="cookie-modal">
+
+  <div class="cookie-modal-box">
+
+    <h2>Evästeasetukset</h2>
+
+    <p>
+      Voit valita, sallitaanko Google Analytics -analytiikka.
+    </p>
+
+    <label class="cookie-toggle">
+      <input
+        type="checkbox"
+        id="analytics-toggle">
+      Salli analytiikkaevästeet
+    </label>
+
+    <button
+      id="cookie-save"
+      class="cookie-btn accept">
+      Tallenna asetukset
+    </button>
+
+  </div>
+
+</div>
+
+<button id="cookie-settings-floating" class="cookie-settings-floating">
+    🍪 Evästeasetukset
+</button>
 </body>
 </html>
