@@ -47,7 +47,7 @@
 
   <h1>Tietosuojaseloste</h1>
 
-  <p class="legal-date">Päivitetty: 13.7.2026</p>
+  <p class="legal-date">Päivitetty: 14.7.2026</p>
 
   <h2>1. Rekisterinpitäjä</h2>
   <p>
@@ -57,9 +57,9 @@
 
   <p>Yhteydenotot tietosuoja-asioissa:</p>
 
-<a href="index.html#contact" class="btn-small privacy-contact-btn">
+  <a href="index.html#contact" class="btn-small privacy-contact-btn">
     Ota yhteyttä
-</a>
+  </a>
 
   <h2>2. Mitä tietoja kerätään</h2>
 
@@ -73,6 +73,7 @@
     <li>Sähköpostiosoite</li>
     <li>Puhelinnumero</li>
     <li>Luokka-aste</li>
+    <li>Yhteydenoton aihe</li>
     <li>Opetuksen tarpeisiin liittyvät tiedot (esimerkiksi aiheet ja tavoitteet)</li>
     <li>Toivotut aikataulut ja opetustapa</li>
     <li>Viestisisältö ja vapaaehtoiset lisätiedot</li>
@@ -92,40 +93,44 @@
     <li>Lakisääteisten velvoitteiden täyttämiseen</li>
   </ul>
 
-  <h2>4. Google Analytics ja evästeet</h2>
+<h2>4. Google Analytics ja evästeet</h2>
 
-  <p>
-    Sivusto käyttää Google Analytics 4 -palvelua (GA4) kävijäanalytiikkaan ja sivuston kehittämiseen.
-  </p>
+<p>
+  Sivusto käyttää Google Analytics 4 -palvelua (GA4) kävijäanalytiikkaan ja sivuston kehittämiseen.
+</p>
 
-  <p>
-    Google Analytics aktivoidaan vain käyttäjän antaman suostumuksen perusteella.
-    Ennen suostumusta analytiikkaevästeitä ei aseteta eikä analytiikkaseurantaa käynnistetä.
-  </p>
+<p>
+  Google Analytics aktivoidaan vain käyttäjän antaman suostumuksen perusteella.
+  Ennen suostumusta analytiikkaevästeitä ei aseteta eikä analytiikkaseurantaa käynnistetä.
+</p>
 
-  <p>
-    Google Analytics voi kerätä esimerkiksi sivuston käyttöön liittyviä tietoja, selainta ja laitetta koskevia teknisiä tietoja sekä IP-osoitteeseen perustuvia tietoja. Sivustolla käytetään IP-osoitteen anonymisointia.
-  </p>
+<p>
+  Google Analytics voi kerätä esimerkiksi sivuston käyttöön liittyviä tietoja, selainta ja laitetta koskevia teknisiä tietoja sekä IP-osoitteeseen perustuvia tietoja. Sivustolla käytetään IP-osoitteen anonymisointia.
+</p>
 
-  <p>
-    Google Analyticsin keräämiä tietoja voidaan siirtää ja käsitellä Euroopan unionin tai ETA-alueen ulkopuolella Google LLC:n toimesta Google Analytics -palvelun tarjoamiseksi.
-  </p>
+<p>
+  Mikäli käyttäjä hyväksyy analytiikkaevästeet, Tally-lomakkeet voivat lähettää Google Analyticsiin tietoja lomakkeiden käytöstä, kuten lomakkeen avaamisesta ja lähettämisestä. Näitä tietoja käytetään verkkosivuston ja lomakkeiden toimivuuden sekä käytettävyyden kehittämiseen.
+</p>
+
+<p>
+  Google Analyticsin keräämiä tietoja voidaan siirtää ja käsitellä Euroopan unionin tai ETA-alueen ulkopuolella Google LLC:n toimesta Google Analytics -palvelun tarjoamiseksi.
+</p>
 
   <h2>5. Evästeiden suostumus</h2>
 
-<p>
-  Käyttäjä voi hyväksyä tai hylätä analytiikkaevästeet evästebannerin kautta.
-  Suostumus tallennetaan käyttäjän selaimen paikalliseen tallennustilaan (localStorage).
-</p>
+  <p>
+    Käyttäjä voi hyväksyä tai hylätä analytiikkaevästeet evästebannerin kautta.
+    Suostumus tallennetaan käyttäjän selaimen paikalliseen tallennustilaan (localStorage).
+  </p>
 
-<p>
-  Suostumuksen voi muuttaa tai peruuttaa milloin tahansa sivuston evästeasetuksista.
-  Halutessaan käyttäjä voi myös poistaa evästeet selaimensa asetuksista.
-</p>
+  <p>
+    Suostumuksen voi muuttaa tai peruuttaa milloin tahansa sivuston evästeasetuksista.
+    Halutessaan käyttäjä voi myös poistaa evästeet selaimensa asetuksista.
+  </p>
 
-<p>
-  Analytiikkaevästeiden hylkääminen ei estä verkkosivuston käyttämistä.
-</p>
+  <p>
+    Analytiikkaevästeiden hylkääminen ei estä verkkosivuston käyttämistä.
+  </p>
 
   <h2>6. Tietojen käsittelyn peruste</h2>
 
@@ -144,7 +149,7 @@
 
   <ul>
     <li>
-      FormSubmit (yhteydenotto- ja varauslomakkeiden välittäminen sähköpostiin)
+      Tally.so (verkkolomakkeiden tarjoaminen sekä yhteydenotto- ja varauslomakkeiden turvallinen vastaanottaminen)
     </li>
     <li>
       Google LLC (Google Analytics)
@@ -227,6 +232,24 @@
 </footer>
 
 <script src="script.js"></script>
+
+<div id="cookie-banner" class="cookie-banner">
+  <div class="cookie-box">
+    <div class="cookie-text">
+      <h3>Evästeet</h3>
+      <p>
+        Käytämme Google Analyticsia sivuston käytön analysointiin. 
+        Tietoja käytetään vain sivuston kehittämiseen. 
+        Voit hyväksyä tai hylätä analytiikkaevästeet.
+      </p>
+    </div>
+
+    <div class="cookie-actions">
+  <button id="cookie-accept" class="cookie-btn accept">Hyväksy</button>
+  <button id="cookie-reject" class="cookie-btn reject">Hylkää</button>
+</div>
+  </div>
+</div>
 
 <div id="cookie-modal" class="cookie-modal">
 
