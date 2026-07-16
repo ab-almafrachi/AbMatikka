@@ -69,7 +69,7 @@ updateTeachingMode();
 }
 });
 
-const GA_ID = "G-FSRPD091LM";
+const GA_ID = "G-5XBF9J3QQ0";
 
 window.dataLayer = window.dataLayer || [];
 function gtag(){ dataLayer.push(arguments); }
