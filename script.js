@@ -72,7 +72,11 @@ updateTeachingMode();
 const GA_ID = "G-5XBF9J3QQ0";
 
 window.dataLayer = window.dataLayer || [];
-function gtag(){ dataLayer.push(arguments); }
+
+function gtag() {
+  dataLayer.push(arguments);
+}
+
 window.gtag = gtag;
 
 gtag('consent', 'default', {
@@ -80,13 +84,13 @@ gtag('consent', 'default', {
   ad_storage: 'denied',
   ad_user_data: 'denied',
   ad_personalization: 'denied',
-  wait_for_update: 500
+  wait_for_update: 1000
 });
 
 /* -----------------------------
    STATE STORAGE
 ------------------------------ */
-const CONSENT_VERSION = "v1";
+const CONSENT_VERSION = "v2";
 
 function saveConsent(state) {
   localStorage.setItem("cookie_consent", JSON.stringify({
@@ -100,7 +104,15 @@ function getConsent() {
   try {
     const raw = localStorage.getItem("cookie_consent");
     if (!raw) return null;
-    return JSON.parse(raw);
+
+    const consent = JSON.parse(raw);
+
+    if (consent.version !== CONSENT_VERSION) {
+      localStorage.removeItem("cookie_consent");
+      return null;
+    }
+
+    return consent;
   } catch {
     return null;
   }
@@ -110,6 +122,7 @@ function getConsent() {
    CONSENT APPLY
 ------------------------------ */
 function applyConsent(analyticsAllowed) {
+
   gtag('consent', 'update', {
     analytics_storage: analyticsAllowed ? 'granted' : 'denied',
     ad_storage: 'denied',
@@ -214,7 +227,8 @@ function loadGA() {
   script.onload = () => {
     gtag("js", new Date());
     gtag("config", GA_ID, {
-      anonymize_ip: true
+    anonymize_ip: true,
+    send_page_view: true
     });
   };
 
