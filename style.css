@@ -1049,3 +1049,18 @@ html {
     border-color: rgba(255,255,255,0.35);
     background: #20242d;
 }
+
+.privacy-links a {
+  color: #1a73e8;
+  text-decoration: underline;
+  text-underline-offset: 2px;
+  transition: color 0.2s ease;
+}
+
+.privacy-links a:hover {
+  color: #4d9cff;
+}
+
+.privacy-links a:visited {
+  color: #7b61ff;
+}
