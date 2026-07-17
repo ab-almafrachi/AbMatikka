@@ -1050,17 +1050,16 @@ html {
     background: #20242d;
 }
 
-.privacy-links a {
-  color: #1a73e8;
+.legal-page a {
+  color: #0066cc;
   text-decoration: underline;
-  text-underline-offset: 2px;
-  transition: color 0.2s ease;
 }
 
-.privacy-links a:hover {
-  color: #4d9cff;
+.legal-page a:hover {
+  color: #004c99;
 }
 
-.privacy-links a:visited {
-  color: #7b61ff;
+.legal-page a:focus {
+  outline: 2px solid #0066cc;
+  outline-offset: 2px;
 }
