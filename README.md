@@ -37,6 +37,11 @@ Verkkosivusto toimii palvelun esittelysivuna, jonka kautta huoltajat voivat tutu
 
 https://abmatikka.fi
 
+## Yhteydenotto & Kysymykset
+
+Lisäkysymyksissä ja tiedusteluissa voit ottaa yhteyttä sähköpostitse:  
+[info@abmatikka.fi](mailto:info@abmatikka.fi)
+
 ## Tekijä
 
 Abdulrahman Al-Mafrachi
