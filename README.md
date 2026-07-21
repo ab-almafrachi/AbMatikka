@@ -1,73 +1,48 @@
 # AbMatikka
 
-AbMatikka is a mathematics tutoring service offering clear, structured, and personalized private lessons for primary and lower secondary school students.
+AbMatikka on matematiikan yksityisopetusta tarjoava palvelu peruskoulun 1.–9. luokkien oppilaille. Tavoitteena on auttaa oppilasta ymmärtämään matematiikkaa selkeästi, kehittämään ongelmanratkaisutaitoja sekä vahvistamaan itsevarmuutta opiskelussa.
 
-The service is available in Espoo, Helsinki, Vantaa, and online across Finland.
+Verkkosivusto toimii palvelun esittelysivuna, jonka kautta huoltajat voivat tutustua opetukseen, lähettää yhteydenottopyynnön tai varata maksuttoman tutustumistunnin.
 
----
+## Palvelut
 
-## 📘 About the Service | Tietoa palvelusta
+- Matematiikan yksityisopetus (1.–9. luokka)
+- Maksuton 30 minuutin tutustumistunti
+- Lähiopetus Espoossa, Helsingissä ja Vantaalla
+- Etäopetus kaikkialle Suomeen
+- Yksilöllinen opetus oppilaan tavoitteiden ja lähtötason mukaan
 
-**EN:**  
-AbMatikka provides one-on-one mathematics tutoring focused on improving understanding, confidence, and school performance.
+## Verkkosivuston ominaisuudet
 
-**FI:**  
-AbMatikka tarjoaa yksilöllistä matematiikan opetusta, jonka tavoitteena on parantaa ymmärrystä, itsevarmuutta ja koulumenestystä.
+- Selkeä ja responsiivinen käyttöliittymä
+- Hinnasto ja usein kysytyt kysymykset
+- Varaa tunti- ja yhteydenottolomakkeet (Tally)
+- Google Analytics 4 evästesuostumuksella
+- Tietosuojaseloste ja käyttöehdot
+- Hakukoneoptimointi (SEO)
+- Schema.org-rakennetut tiedot
+- XML-sivustokartta ja robots.txt
 
----
+## Käytetyt teknologiat
 
-## 🎯 Who is it for? | Kenelle?
-
-**EN:**
-- Primary school students (grades 1–6)
-- Lower secondary school students (grades 7–9)
-- Students needing support in basic mathematics or exam preparation
-
-**FI:**
-- Alakoulun oppilaat (1.–6. luokka)
-- Yläkoulun oppilaat (7.–9. luokka)
-- Oppilaat, jotka tarvitsevat tukea matematiikassa tai kokeisiin valmistautumisessa
-
----
-
-## 📚 Services | Palvelut
-
-**EN:**
-- Private mathematics lessons (1-on-1)
-- Free introductory lesson
-- Online and in-person teaching
-
-**FI:**
-- Yksityisopetus (1–1-opetus)
-- Ilmainen tutustumistunti
-- Lähi- ja etäopetus
-
----
-
-## 💻 Technology | Teknologia
-
-- HTML
-- CSS
+- HTML5
+- CSS3
 - JavaScript
-- GitHub Pages
+- Cloudflare
+- GitHub
+- Tally
+- Google Analytics 4
 
----
+## Verkkosivusto
 
-## 🌍 Location | Sijainti
+https://abmatikka.fi
 
-Espoo • Helsinki • Vantaa • Online (Finland)
+## Tekijä
 
----
+Abdulrahman Al-Mafrachi
 
-## 📞 Contact | Yhteystiedot
+## Lisenssi
 
-Booking and contact available through the website form.
+Tämän projektin sisältö, tekstit, kuvat, logo ja muu aineisto ovat tekijänoikeuden suojaamia, ellei toisin mainita.
 
-Website:  
-https://ab-almafrachi.github.io/abmatikka/
-
----
-
-## 🚀 Status
-
-Active tutoring service website — continuously improved and updated.
+Kaikki oikeudet pidätetään.
